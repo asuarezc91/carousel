@@ -7,7 +7,7 @@ import Map from "esri/Map";
 // const noop = () => {};
 
 const url =
-  "https://services6.arcgis.com/30currU8oaQeVHvW/ArcGIS/rest/services/paths/FeatureServer/0";
+  "https://services8.arcgis.com/o9xiVBMM7LVPq4Xx/ArcGIS/rest/services/spatial_selection_50km/FeatureServer/0";
 export const fl = new FeatureLayer(url);
 export const map = new Map({
   basemap: "dark-gray",
@@ -18,8 +18,8 @@ export const map = new Map({
 export const view = new MapView({
   map: map,
   container: "viewDiv",
-  center: [-17.93, 28.66],
-  zoom: 10
+  center: [-5.9, 37.3],
+  zoom: 6
 });
 
 

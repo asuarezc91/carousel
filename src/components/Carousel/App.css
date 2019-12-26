@@ -29,6 +29,7 @@
     position: absolute;
     right: 70px;
     bottom: 30px;
+    height: 200px;
 }
 img {
     display:block;

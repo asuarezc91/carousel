@@ -1,16 +1,31 @@
 import styled from "styled-components";
 
-export const ChartMenuPrint = styled.div`
-position: absolute;
-top: 0px;
-right: 0px;
-width: 400px;
-height: calc(100% - 0px);
-background: yellow;
+export const Select = styled.select`
+    text-align-last: center;
+    background-color: #262626;
+    color: white;
+    height: 24px;
+    border-radius: 1px;
+    border-color: black; 
+    font-size: 14px;
+`;
+
+export const ContainerSelection = styled.div`
 display: flex;
-flex-direction: column; 
-justify-content: center; 
+flex-direction: row;
+justify-content: center;
 align-items: center; 
 `;
 
- 
+export const ParrafoProvincia = styled.p`
+position: relative;
+top: 8px;
+right: 10px;
+font-size: 14px;
+color: #6c757d
+`;
+
+
+// flex-direction: row;
+// justify-content: center;
+// align-items: center; 
