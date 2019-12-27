@@ -16,7 +16,7 @@ import Query from "esri/tasks/support/Query";
 import QueryTask from "esri/tasks/QueryTask";
 import { Select } from "./styles";
 import { ContainerSelection } from "./styles";
-import {ParrafoProvincia} from "./styles"; 
+import { ParrafoProvincia } from "./styles";
 
 export const Carousel = () => {
   const [suggestions, setSuggestions] = useState([])
@@ -59,6 +59,8 @@ export const Carousel = () => {
 
   });
 
+
+
   let settings = {
     infinite: false,
     speed: 1000,
@@ -83,12 +85,20 @@ export const Carousel = () => {
       }
     ]
   }
+
+  function filterPath() {
+    alert("change");
+  }
+
+
   return (
 
     <div className="container">
       <ContainerSelection>
         <ParrafoProvincia>Seleccione una provincia: </ParrafoProvincia>
-        <Select>
+        <Select
+          onChange={() => filterPath()}
+        >
           <option value="value1" selected > Murcia </option>
           <option value="value2" >Value 2</option>
           <option value="value3">Value 3</option>
